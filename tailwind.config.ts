@@ -1,6 +1,7 @@
-import { withUt } from 'uploadthing/tw';
+import { withUt } from "uploadthing/tw";
 
-module.exports= {
+ 
+export default withUt({
   darkMode: ['class'],
   content: [
     './pages/**/*.{ts,tsx}',
@@ -14,6 +15,7 @@ module.exports= {
       padding: '2rem',
       screens: {
         '2xl': '1400px',
+        'xs':'470px'
       },
     },
     extend: {
@@ -94,7 +96,7 @@ module.exports= {
     },
   },
   plugins: [require('tailwindcss-animate')],
-}
+})
 // export default config;
 
 
