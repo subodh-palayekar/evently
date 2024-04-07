@@ -10,10 +10,7 @@ import { handleError } from '@/lib/utils'
 
 import { CreateUserParams, UpdateUserParams } from '@/types'
 
-export async function createUser(user: CreateUserParams) {
-
-    console.log("user created action");
-    
+export async function createUser(user: CreateUserParams) {    
   try {
     await connectToDatabase()
 
